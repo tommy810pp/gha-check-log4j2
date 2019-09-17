@@ -8,4 +8,4 @@ inputs:
     description: 'repository name'
 runs:
   using: 'node12'
-  main: 'lib/main.js'
+  main: './main.js'
