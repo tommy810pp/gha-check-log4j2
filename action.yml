@@ -6,4 +6,4 @@ inputs:
     description: 'repository'
 runs:
   using: 'node12'
-  main: 'src/main.js'
+  main: 'lib/main.js'
