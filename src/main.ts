@@ -36,6 +36,7 @@ export async function run() {
         throw Error(`async appender should be false. [${blockingAsyncAppenders.map((appender) => `${appender.getAttribute('name')}.blocking=${appender.getAttribute('blocking')}`).join(', ')}]`);
       }
   
+      console.log('All Kafka Async Appenders are configured propery. (blocking=false)');
     } catch (error) {
       core.setFailed(error.message);
     }
