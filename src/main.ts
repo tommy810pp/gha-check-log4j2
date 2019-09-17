@@ -12,7 +12,7 @@ import { DOMParserImpl as dom } from 'xmldom-ts';
 
 export async function run() {
     try {
-      const log4j2xml = path.join(core.getInput('WORKFLOW'), core.getInput('REPO'), 'src/main/resources/log4j2.xml');
+      const log4j2xml = path.join(process.env.GITHUB_WORKSPACE!, core.getInput('REPO'), 'src/main/resources/log4j2.xml');
       if(!fs.existsSync(log4j2xml)) {
         throw Error(`log4j2.xml doesn\'t exists at ${log4j2xml}`);
       }

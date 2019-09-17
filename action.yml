@@ -2,8 +2,6 @@ name: 'log4j2 validator'
 description: 'check if log4j kafka blocking configuration is false'
 author: 'tommy810pp'
 inputs:
-  WORKSPACE:
-    description: 'workspace'
   REPOSITORY:
     description: 'repository'
 runs:
