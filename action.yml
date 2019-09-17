@@ -1,9 +1,6 @@
 name: 'log4j2 validator'
 description: 'check if log4j kafka blocking configuration is false'
 author: 'tommy810pp'
-inputs:
-  REPOSITORY:
-    description: 'repository'
 runs:
   using: 'node12'
   main: 'lib/main.js'
