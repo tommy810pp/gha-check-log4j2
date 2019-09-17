@@ -8,4 +8,4 @@ inputs:
     description: 'repository'
 runs:
   using: 'node12'
-  main: './main.js'
+  main: 'src/main.js'
